@@ -1,0 +1,293 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body{
+	font-size: 100%;
+	font: inherit;
+	background: url(../img/2.png) repeat 0px 0px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	transition: 0.5s all;
+}
+.clear{
+	clear: both;
+}
+/*header*/
+h1{
+	font-family: "微软雅黑";
+	font-size: 3em;
+	color: #3c2f24;
+	text-align: center;
+	margin: 2em 0 1em 0;
+}
+/*element*/
+.element{
+	width: 60%;
+	margin: 0 auto 7em;
+	padding: 2em;
+	display: flex;  /*弹性盒子*/
+	flex-flow: row; /*横向排列*/
+}
+.element-left{
+	margin: 0 1.5%;
+	flex: 3.3; /*容器三分*/
+	order: 1;  /*第一*/
+}
+.element-right{
+	margin: 0 1.5%;
+	flex: 3.3; /*容器三分*/
+	order: 2;  /*第二*/
+}
+.element-last{
+	margin: 0 1.5%;
+	flex: 3.3; /*容器三分*/
+	order: 3;  /*第三*/
+}
+/*element-left*/
+.edit{
+	margin: 0 auto;
+	background: white;
+}
+form{
+	padding: 10% 4% 8% 4%;
+}
+form li{
+	list-style: none;
+	width: 100%;
+	font-weight: 500;
+	border: 1px solid #ccc;
+	background: #fff;
+	margin: 1em 0;
+}
+.edit>form>ul>li{
+	position: relative;
+}
+.edit>form>ul>li>input{
+	padding-left: 3.65em;
+}
+input[type="text"]{
+	width: 83%;
+	padding: 1em 0 1em 1.7em;
+	font-size: 15px;
+	font-weight: 500;
+	color: #858282;
+}
+.user1{
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin: 12px 0 0 0;
+	border-right: 1px solid #999;
+	padding: 5px 16px 0 0;
+	background: url(../img/user.png) no-repeat 8px 2px;
+	position: absolute;
+	top: 0px;
+	left: 6px;
+}
+.lock1{
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin: 12px 0 0 0;
+	border-right: 1px solid #999;
+	padding: 5px 16px 0 0;
+	background: url(../img/lock.png) no-repeat 8px 2px;
+	position: absolute;
+	top: 0px;
+	left: 6px;
+}
+.submit input[type="submit"]{
+	width: 100%;
+	padding: 21px 20px;
+	background: #ef8d32;
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	cursor: pointer;
+	transition: 0.1s all;
+}
+input[type="submit"]:hover{
+	background: #ee5a32;
+}
+/*element-right*/
+.teddy-bear{
+	text-align: center;
+}
+.teddy-text{
+	background: white;
+	padding: 1em;
+}
+.teddy-text h4{
+	font-size: 1.2em;
+	color: #ee5a32;
+	margin: 0.5em 0 0;
+}
+.teddy-text img{
+	width: 60%;
+	padding: 8px;
+	border: 3px solid #ee5a32;
+	border-radius: 70px;
+}
+.teddy-follow{
+	background: #ef8d32;
+	padding: 0.7em 0 0.7em 0;
+}
+.teddy-follow li{
+	display: inline-block;
+	width: 49%;
+	float: left;
+	text-align: center;
+}
+.teddy-follow li h3{
+	font-size: 0.95em;
+	font-weight: bold;
+	color: white;
+}
+.teddy-follow li p{
+	font-size: 0.8em;
+	color: white;
+}
+.teddy-follow li.folw-h{
+	border-right: 1px solid white;
+}
+/*element-last*/
+ul.content{
+	width: 100%;
+	margin: 0 auto;
+	background: #EF8D32;
+	font-weight: 100;
+}
+li.button a{
+	padding: 23.5px 27px;
+	margin: 0;
+	display: block;
+}
+li.button{
+	list-style: none;
+	text-align: left;
+}
+li.menu{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #cd5f4a;
+}
+li.menu:hover{
+	background: #ee5a32;
+}
+li.button a:hover{
+	text-decoration: none;
+}
+li.button a span{
+	margin-right: 22px;
+}
+li.menu.info{
+	border-bottom: none;
+}
+li.button i{
+	display: block;
+	float: right;
+	padding: 4px 12px;
+	border-radius: 4px;
+	background: #505771;
+	font-size: 13px;
+	font-style: normal;
+}
+a:visited{
+	color: white;
+}
+.icon{
+	width: 25px;
+	height: 23px;
+	float: left;
+	display: inline-block;
+}
+.icon{
+	background: url(../img/img-sprite.png) no-repeat -1px -2px;
+}
+.stat{
+	background: url(../img/img-sprite.png) no-repeat -30px -4px;
+}
+.msg{
+	background: url(../img/img-sprite.png) no-repeat -62px -2px;
+}
+.signout{
+	background: url(../img/img-sprite.png) no-repeat -93px -2px;
+}
+/*媒体查询*/
+@media(max-width:1366px){
+	input[type="text"]{
+		padding: 1em 0 1em 0.7em;
+	}
+	.user1{
+		margin: 12px -3px 0px 0px;
+		padding: 5px 10px 0 0;
+	}
+	.lock1{
+		margin: 12px -3px 0px 0px;
+		padding: 5px 10px 0 0;
+	}
+}
+@media(max-width:1280px){
+	input[type="text"]{
+		width: 75%;
+	}
+	.element{
+		width: 82%;
+		margin: 0 auto 6em;
+	}
+	form{
+		padding: 12% 4%;
+	}
+}
+@media(max-width:768px){
+	input[type="text"]{
+		width: 60%;
+	}
+	li.button a{
+		padding: 23.5px 16px;
+	}
+	.teddy-text h4{
+		font-size: 1em;
+	}
+	li.button a{
+		padding:22.5px 10px
+	}
+}
+@media(max-width:640px){
+	input[type="text"]{
+		width: 89%;
+	}
+	.element{
+		margin: 0 auto 2em;
+		flex-flow: column;
+	}
+	.element-left,.element-right,.element-last{
+		order: 0;
+		margin: 1%;
+	}
+	h1{
+		font-size: 2em;
+		margin: 1em 0 0.5em 0;
+	}
+	form{
+		padding: 13%;
+	}
+}
+@media(max-width:600px){
+	input[type="text"]{
+		width: 80%;
+	}
+}
+@media(max-width:568px){
+	input[type="text"]{
+		width: 70%;
+	}
+}
